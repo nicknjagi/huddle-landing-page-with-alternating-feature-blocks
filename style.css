@@ -1,56 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif; */
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box
 }
-
 :root {
     --primary-color: hsl(322, 100%, 66%);
     --neutral-pale-cyan: hsl(193, 100%, 96%);
     --neutral-dark-cyan:hsl(192, 100%, 9%);
     --neutral-grayish-blue:hsl(208, 11%, 55%);
 }
-
 body {
-    font-size: 18px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 }
-
 .container {
     background-image: url("./images/bg-hero-mobile.svg");
     background-color: var(--neutral-pale-cyan);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
-
 header {
     padding: 2rem 1rem;
     display: flex;
     justify-content: space-between;
 }
-
 header img {
-    width: 130px;
+    width: 110px;
 }
-
-header button {
-    padding: 8px;
-    width: 130px;
+button {
     border: none;
+    font-family: inherit;
     border-radius: 30px;
-    background-color: #ffffff;
-    font-family: inherit;color: var(--neutral-dark-cyan);
-    /* font-size: 12px; */
     font-weight: 600;
+    font-size: 12px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+button:hover {
+    cursor: pointer;
+}
+header button {
+    padding: 2px 0 4px 0;
+    width: 110px;
+    background-color: #ffffff;
+    color: var(--neutral-dark-cyan);
     box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, 0.1);
 }
 header button:hover {
     font-weight: 400;
-    cursor: pointer;
+}
+main {
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
+main h1 {
+    margin: 2.5rem 0 1.5rem 0;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+main img {
+    width:300px;
+    margin-bottom: 2rem;
+}
+main p {
+    line-height: 1.5rem;
+}
+main button {
+    width: 240px;
+    height: auto;
+    padding: 12px 0;
+    margin: 2rem 0 3.2rem 0;
+}
+
+
+
+
+img {
+    width:300px;
 }
