@@ -99,8 +99,25 @@ section{
 .card p {
     font-size: 14px;
 }
-.card h2 {
+h2 {
     color: var(--neutral-dark-cyan);
     padding: 1rem 0;
     font-size: 20px;
+}
+.floating-card-container{
+    padding: 0 12px;
+}
+.floating-card{
+    max-width: 600px;
+    box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.1);
+    padding: 2rem 0;
+    border-radius: 15px;
+    transform: translateY(30%);
+}
+.floating-card h2{
+    font-size: 18px;
+}
+.floating-card button{
+    width: 200px;
+    padding: 12px 0;
 }
