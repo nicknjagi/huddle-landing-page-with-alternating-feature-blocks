@@ -7,12 +7,14 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/03b9bb3b2d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f8d6222a2.js" crossorigin="anonymous"></script>
+
+
     <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 </head>
 <body>
-    <div class="container">
-        <header>
+    <div class="top-container">
+        <header class="flex">
             <div>
                 <img src="./images/logo.svg" alt="logo">
             </div>
@@ -31,7 +33,7 @@
     </div>
 
     <section>
-        <div class="card">
+        <div class="card flex">
             <div>
                 <img src="./images/illustration-grow-together.svg" alt="illustration" aria-hidden="true">
             </div>
@@ -40,7 +42,7 @@
                 <p>Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
             </div>
         </div>
-        <div class="card">
+        <div class="card flex">
             <div>
                 <img src="./images/illustration-flowing-conversation.svg" alt="illustration" aria-hidden="true">
             </div>
@@ -50,7 +52,7 @@
                 have just-in-time loading for a more natural flow.</p>
             </div>
         </div>
-        <div class="card">
+        <div class="card flex">
             <div>
                 <img src="./images/illustration-your-users.svg" alt="illustration" aria-hidden="true">
             </div>
@@ -69,43 +71,45 @@
         </div>
     </div>
     
-    <footer>
-        <div>
-            <img src="./images/logo.svg" alt="logo">
-            <div>
+    <footer class="flex">
+        <div class="contact-container flex">
+            <img src="./images/bottom-logo.svg" class="logo" alt="logo" aria-hidden="true">
+            <div class="flex">
                 <img src="./images/icon-location.svg" alt="icon" aria-hidden="true">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua</p>
             </div>
-            <div>
+            <div class="flex">
                 <img src="./images/icon-phone.svg" alt="icon" aria-hidden="true">
                 <p>+1-543-123-4567</p>
             </div>
-            <div>
+            <div class="flex">
                 <img src="./images/icon-email.svg" alt="icon" aria-hidden="true">
                 <p>example@huddle.com</p>
             </div>
         </div>
         <div>
-            <ul>
+            <ul class="flex">
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">What We Do</a></li>
                 <li><a href="#">FAQ</a></li>
             </ul>
         </div>
         <div>
-            <ul>
+            <ul class="flex">
                 <li><a href="#">Career</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
         </div>
-        <div>
-            <div>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <p>&copy; Copyright 2018 Huddle. All rights reserved.</p>
+        <div class="icons-container">
+            <div class="icons flex">
+                <div class="flex">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <small>&copy; Copyright 2018 Huddle. All rights reserved.</small>
             </div>
         </div>
     </footer>

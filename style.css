@@ -16,18 +16,20 @@ body {
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 }
-.container {
+.top-container {
     background-image: url("./images/bg-hero-mobile.svg");
     background-color: var(--neutral-pale-cyan);
     background-size: contain;
+    padding: 2rem 1rem;
+}
+.flex {
+    display: flex;
 }
 header {
-    padding: 2rem 1rem;
-    display: flex;
     justify-content: space-between;
 }
 header img {
-    width: 110px;
+    width: 130px;
 }
 button {
     border: none;
@@ -54,7 +56,7 @@ header button:hover {
     background-color: #ffffff;
 }
 main {
-    width: 300px;
+    padding: 2rem 1.2rem;
     margin: auto;
 }
 main h1 {
@@ -63,7 +65,7 @@ main h1 {
     font-family: 'Poppins', sans-serif;
 }
 main img {
-    width:300px;
+    width: 300px;
     margin-bottom: 2rem;
 }
 p {
@@ -72,26 +74,22 @@ p {
 main button {
     width: 240px;
     height: auto;
-    padding: 12px 0;
+    padding: 14px 0;
     margin: 2rem 0 3.2rem 0;
 }
 section{
-    padding: 4rem 0;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+    padding: 1rem 1.2rem;
 }
 .card {
-    width: 350px;
-    margin: auto;
-    box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.1);
-    padding: 4rem 3rem 3rem 3rem;
+    max-width: 1280px;
+    margin: 3rem auto 0 auto;
+    box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.075);
+    padding: 3.5rem 2.4rem 3rem 2.4rem;
     color: var(--neutral-grayish-blue);
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
-    border-radius: 15px;
+    border-radius: 16px;
 }
 .card img {
     width:270px;
@@ -106,13 +104,16 @@ h2 {
 }
 .floating-card-container{
     padding: 0 12px;
+    margin-top: 3rem;
 }
 .floating-card{
-    max-width: 600px;
+    background-color: #ffffff;
+    max-width: 720px;
+    margin: auto;
     box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.1);
     padding: 2rem 0;
     border-radius: 15px;
-    transform: translateY(30%);
+    transform: translateY(35%);
 }
 .floating-card h2{
     font-size: 18px;
@@ -121,3 +122,61 @@ h2 {
     width: 200px;
     padding: 12px 0;
 }
+footer {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 6rem 15px 2rem 15px;
+    background-color: var(--neutral-dark-cyan);
+    color: var(--neutral-pale-cyan);
+    text-align: left;
+    font-size: 14px;
+}
+.contact-container {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+}
+.logo{
+    height: auto;
+    width: 130px;
+}
+.contact-container div{
+    gap: 1rem;
+    width: 280px;
+}
+.contact-container div img {
+    width: auto;
+    height: 16px;
+    margin-top: 5px;
+    color: #ffffff;
+}
+footer div ul {
+    list-style: none;
+    flex-direction: column;
+    gap: 1rem;
+}
+footer div ul a{
+    text-decoration: none;
+    color: var(--neutral-pale-cyan);
+}
+.icons{
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+}
+.icons div{
+    justify-content: center;
+    gap: 10px;
+}
+.icons div i:first-child{
+    padding: 7px 9px;
+}
+i{
+    margin: 1rem 0;
+    font-size: 12px;
+    padding: 7px;
+    border: 1px solid var(--neutral-pale-cyan);
+    border-radius: 60px;
+}
+
