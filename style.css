@@ -27,6 +27,9 @@ body {
 }
 header {
     justify-content: space-between;
+    align-items: center;
+    max-width:1200px;
+    margin: auto;
 }
 header img {
     width: 130px;
@@ -57,10 +60,10 @@ header button:hover {
 }
 main {
     padding: 2rem 1.2rem;
-    margin: auto;
+    margin:3rem auto;
 }
-main h1 {
-    margin: 2.5rem 0 1.5rem 0;
+h1 {
+    margin-bottom: 1.5rem;
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
 }
@@ -111,7 +114,7 @@ h2 {
     max-width: 720px;
     margin: auto;
     box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.1);
-    padding: 2rem 0;
+    padding: 1rem 0;
     border-radius: 15px;
     transform: translateY(35%);
 }
@@ -121,11 +124,12 @@ h2 {
 .floating-card button{
     width: 200px;
     padding: 12px 0;
+    margin-bottom: 1rem
 }
 footer {
     flex-direction: column;
     gap: 1rem;
-    padding: 6rem 15px 2rem 15px;
+    padding: 7rem 15px 2rem 15px;
     background-color: var(--neutral-dark-cyan);
     color: var(--neutral-pale-cyan);
     text-align: left;
@@ -135,7 +139,7 @@ footer {
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 1rem;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
 }
 .logo{
     height: auto;
@@ -151,6 +155,10 @@ footer {
     margin-top: 5px;
     color: #ffffff;
 }
+.links{
+    flex-direction: column;
+    gap: 1rem;
+}
 footer div ul {
     list-style: none;
     flex-direction: column;
@@ -159,6 +167,9 @@ footer div ul {
 footer div ul a{
     text-decoration: none;
     color: var(--neutral-pale-cyan);
+}
+footer div ul a:hover{
+    border-bottom: 2px solid var(--neutral-pale-cyan);
 }
 .icons{
     flex-direction: column;
@@ -179,4 +190,157 @@ i{
     border: 1px solid var(--neutral-pale-cyan);
     border-radius: 60px;
 }
+i:hover{
+    transform: scale(1.2);
+    color: #FF9BDB;
+}
+@media screen and (min-width: 600px) {
+    body{
+        text-align: start;
+    }
+    .top-container {
+        background-image: url("./images/bg-hero-desktop.svg");
+        padding: 3rem 1rem ;
+    }
+    header img {
+        width: 150px;
+    }
+    button{
+        font-size: 14px;
+    }
+    header button{
+        padding: 8px 0 10px 0;
+        width: 135px;
+    }
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        max-width: 1200px;
+        margin: 4rem auto;
+    }
+    main div {
+        max-width: 510px;
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    h1 {
+        font-weight: 600;
+        font-size: 32px;
+    }
+    main img{
+        width: 300px;
+    }
+    section{
+        padding: 1rem 2rem;
+        max-width: 1280px;
+        margin-inline: auto;
+        margin-top: 2rem;
+    }
+    .card {
+        flex-direction: row;
+        margin-top: 2rem;
+        justify-content: space-around;
+        padding: 3rem;
+    }
+    .card p{
+        font-size: 18px;
+    }
+    .card div{
+        max-width:510px;
+    }
+    .card img {
+        order:1;
+        width: 240px;
+    }
+    .card:nth-child(2) img{
+        order:initial;
+    }
+    .floating-card-container{
+        padding: 12px 3rem;
+    }
+    .floating-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .floating-card h2{
+    font-size: 24px;
+    }
+    .floating-card button {
+        width:220px;
+        padding: 14px 0;
+    }
+    footer{
+        align-items: center;
+    }
+    .links {
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 820px)
+{
+    body{
+        font-size: 18px;
+    }
+    .top-container {
+        padding: 3rem;
+    }
+    header {
+        margin-bottom: 2rem;
+    }
+    main {
+        gap: 2rem;
+    }
+    h1{
+        font-size: 40px;
+    }
+    main img {
+        width:360px;
+    }
+    section{
+        padding: 1rem 3rem;
+    }
+    .card {
+        padding-block: 4rem;
+    }
+    .card img {
+        width: 320px;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+    .icons{
+        justify-content: space-between;
+        height: 220px;
+        transform: translateY(15%);
+    }
+    .icons div{
+        justify-content: flex-start;
+    }
+}
+@media screen and (min-width: 980px){
+    main img{
+        width: 450px;
+    }
+}
+@media screen and (min-width: 1100px){
+    main img{
+        width: 540px;
+    }
+}
+@media screen and (min-width: 1200px){
+    main img{
+        width: 600px;
+    }
+}
+
 
