@@ -126,11 +126,13 @@ h2 {
     padding: 12px 0;
     margin-bottom: 1rem
 }
-footer {
+footer{
+    background-color: var(--neutral-dark-cyan);
+    padding: 7rem 15px 2rem 15px;
+}
+.footer-container {
     flex-direction: column;
     gap: 1rem;
-    padding: 7rem 15px 2rem 15px;
-    background-color: var(--neutral-dark-cyan);
     color: var(--neutral-pale-cyan);
     text-align: left;
     font-size: 14px;
@@ -159,16 +161,16 @@ footer {
     flex-direction: column;
     gap: 1rem;
 }
-footer div ul {
+.footer-container div ul {
     list-style: none;
     flex-direction: column;
     gap: 1rem;
 }
-footer div ul a{
+.footer-container div ul a{
     text-decoration: none;
     color: var(--neutral-pale-cyan);
 }
-footer div ul a:hover{
+.footer-container div ul a:hover{
     border-bottom: 2px solid var(--neutral-pale-cyan);
 }
 .icons{
@@ -191,7 +193,8 @@ i{
     border-radius: 60px;
 }
 i:hover{
-    transform: scale(1.2);
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
     color: #FF9BDB;
 }
 @media screen and (min-width: 600px) {
@@ -274,12 +277,10 @@ i:hover{
         width:220px;
         padding: 14px 0;
     }
-    footer{
+    .footer-container{
+        max-width: 1200px;
+        margin-inline: auto;
         align-items: center;
-    }
-    .links {
-        flex-direction: row;
-        gap: 3rem;
     }
 }
 
@@ -312,11 +313,11 @@ i:hover{
     .card img {
         width: 320px;
     }
-    footer {
+    .footer-container {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 4rem;
+        padding-inline: 2rem;
     }
     .icons{
         justify-content: space-between;
